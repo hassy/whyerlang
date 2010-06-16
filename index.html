@@ -1,1 +1,184 @@
-foo
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Why Erlang Is Awesome</title>
+	<link rel="stylesheet" href="screen.css" />
+</head>
+
+<body>
+
+<div style="text-align: center; width: 100%; margin: 0 0 20px 0;">
+  <img src="images/welcome.png" style="margin-left: 0px;" />
+</div>
+
+<div id="content">
+
+<div id="summary">
+
+<h1><nobr>Why use Erlang?</nobr></h1>
+
+<p>
+  <a href="#kickass">built to kick ass</a>,
+  <a href="#proven">battle-proven</a>,
+  <a href="#save">saves time &amp; money</a>,
+  <a href="#learn">easy to learn</a>
+</p>
+
+<h1><nobr>What's so awesome?</nobr></h1>
+
+<p>
+  <a href="#conc">lightweight concurrency</a>, 
+  <a href="#distr">transparent distribution</a>, 
+  <a href="#hotcode">hot code upgrades</a>, 
+  <a href="#otp">OTP</a>
+  &amp; <a href="#more">more...</a>
+</p>
+
+<h1><nobr>Get started!</nobr></h1>
+
+<p>
+  <a href="http://erlang.org">erlang.org</a>,
+  book – <a href="http://http://www.amazon.com/ERLANG-Programming-Francesco-Cesarini/dp/0596518188">Erlang Programming</a>,
+  try Erlang online at <a href="http://tryerlang.org">tryerlang.org</a>
+</p>
+
+</div> <!-- #summary -->
+
+<div class="reason">
+  <h1><a name="kickass">built to kick ass</a></h1>
+  
+  <p>Erlang was developed at <strong>Ericsson</strong> and was designed from the ground up for writing <strong>scalable</strong>, <strong>fault-tolerant</strong>, <strong>distributed</strong>, <strong>non-stop</strong>, <strong>soft-realtime</strong> applications. <em>Everything</em> in the language, runtime and libraries reflects that purpose, which makes Erlang the best platform for developing this kind of software.</p>
+  
+  <p>Do these look like properties you'd like your software to have?</p>
+  
+  <ul>
+    <li>handle very large number of concurrent activities</li>
+    <li>be responsive to users within certain strict timeframes</li>
+    <li>be easily distributable over a network of computers</li>
+    <li>scale with the number of machines on the network</li>
+    <li>be fault-tolerant to both software &amp; hardware errors</li>
+    <li>be upgradable &amp; reconfugurable without having to stop &amp; restart</li>
+    <li>be in continuous operation for many years</li>
+  </ul>
+  
+  <p>If so, then you should really consider Erlang for your next project.</p>
+    
+  <p>Because Erlang is oriented around concurrency, it's also naturally good at utilizing modern multicore systems.</p>
+
+  <p><a href="#conc">Lightweight concurrency</a>, <a href="#distr">transparent distribution</a>, <a href="#hotcode">hot code replacement</a>, and <a href="#otp">OTP</a> are some of the specific features that make Erlang a joy to work with.</p>  
+</div>
+
+<div class="reason">
+  <h1><a name="proven">battle-proven</a></h1>
+    
+  <p>Erlang has been successfully used in production systems for over 20 years (with reported uptimes of 9-nines – 31ms of downtime a year). It's been proven to work well in both large-scale industrial software development, and in small agile teams in startups.</p>
+
+  <p><strong>Ericsson</strong> themselves have used Erlang extensively for many projects of varying sizes, both commercial and internal. The AXD301 ATM, one of Ericsson's flagship products, may be the largest Erlang project in existence at over 1.1 million lines of Erlang.</p>
+  
+  <p>Other users of Erlang in the telecoms industry include <strong>Motorola</strong>, <strong>Nokia</strong>, <strong>T-Mobile</strong> &amp; <strong>BT</strong>.</p>
+
+  <p>More recently, users of Erlang include companies such as <strong>Amazon</strong>, <strong>Yahoo!</strong>, <strong>Facebook</strong>, <strong>Last.fm</strong>.</p>
+
+  <p>Erlang is also a great choice for startups, and can be their <a href="http://www.paulgraham.com/avg.html">secret weapon</a>. <strong>Bluetail</strong>, <strong>Kreditor</strong>, and <strong>Tail-F</strong> &mdash; all great successes &mdash; were the first startups to use Erlang. Some startups that have used Erlang recently are <strong><a href="http://hypernumbers.com">Hypernumbers</a></strong>, <strong>MochiMedia</strong>, <strong>Github</strong>, <strong>Powerset</strong>, <strong>EngineYard</strong>, <strong>Heysan</strong>, <strong>N54 Inc</strong>, and <strong>Streamfile</strong>.</p>
+  
+  <p>Erlang also powers some very exciting open-source projects, such as <strong>ejabberd</strong>, <strong>CouchDb</strong>, <strong>Disco</strong>, <strong>Vertebra</strong>, <strong>RabbitMQ</strong>, <strong>MochiWeb</strong>, and <strong>Dynomite</strong>.</p>
+  
+  <!-- <p><a href="users">See more examples</a> of applications built with Erlang.</p> -->
+</div>
+
+<div class="reason">
+  <h1><a name="save">saves time &amp; money</a></h1>
+  
+  <p>Erlang lets you deliver kick-ass software faster, on smaller budgets and with smaller teams, and reduce <abbr title="Total Life Cost">TLC</abbr> &amp; <abbr title="Total Cost of Ownership">TCO</abbr>.</p>
+  
+  <p>This is made possible by a number of reasons:</p>
+  
+  <ul>
+    <li>The <a href="#otp">OTP</a> libraries provide a complete set of easy-to-use components for building robust distributed applications, that have been used in hundreds of projects, and thouroughly tested &amp; debugged over the last 10 years.</li>
+    <li>A large number of high-quality open-source libraries is available for many other tasks, such as XML processing or interacting with database systems such as PostgreSQL. Interfacing with existing code in Java, C, Python or Ruby is straightforward too.</li>
+    <li>Erlang code tends to be conscise &amp; readable, which is made possible by the simplicity of the language &amp; powerful abstraction mechanisms available.</li>
+    <li>Erlang scales well to large &amp; small teams, and makes both top-down and bottom-up approaches to building software natural.</li>
+    <li>Erlang is easy to learn. An experienced programmer can start writing useful code after a couple of days of learning Erlang.</li>
+    <li>Availability of high-quality tools such as documentation generators, testing frameworks, debuggers, graphical diagnostics tools, and IDEs.</li>
+  </ul>  
+</div>
+
+<div class="reason">
+  <h1><a name="learn">easy to lea<span class="rnBrk">rn</span></a></h1>
+  
+  <p>Erlang has a simple &amp; consistent core which makes it easy to pick up. Experienced programmers can start writing useful code after a couple of days with Erlang. There are no complicated concepts to understand or arcane theories to master. The syntax may look a little different if you're coming from Ruby, Python, or Java, but it doesn't take long to get used to.</p>
+  
+  <p>In fact, making the language easy to pick up was one of the original design goals of the Erlang development team. Erlang is very <em>pragmatic</em> &amp; has been made by working programmers, for working programmers.</p>
+</div>
+
+<div class="reason">
+  <h1><a name="conc">lightweight concurrency</a></h1>
+  
+  <p>Processes are very lightweight, with only about 500 bytes of overhead per-process. This means that millions of processes can be created, even on older computers.</p>
+  
+  <p>Because Erlang's processes are completely independent of OS processes (and aren't managed by the OS scheduler), your programs will behave in exactly the same way regardless of whether they run on Linux, FreeBSD, Windows or any of the other systems that Erlang runs on.</p>
+  
+  <p>Because of Erlang's great support for concurrency it becomes natural to model applications around multiple independent communicating agents, which is just how things are in the real world.</p>
+
+</div>
+
+<div class="reason">
+  <h1><a name="hotcode">hot code replacement</a></h1>
+  
+  <p>In a real-time control system we often don't want to stop the system in order to upgrade the code. In certain real-time control systems we may never <em>be able</em> to turn off the system to perform upgrades, and such systems have to be designed with dynamic code upgrades in mind. An example of such system is the X2000 satellite control system developed by NASA.</p>
+  
+  <p>When you write your app in Erlang, you get dynamic code upgrade support <em>for free</em> when you use <a href="#otp">OTP</a>. The mechanism itself is very straightforward and easy to understand.</p>
+  
+  <p>This can save hundreds of hours of time in development:</p>
+  
+  <p>This is a common Erlang development workflow:</p>
+  
+  <ol>
+    <li>Start the app.</li>
+    <li>Edit the code.</li>
+    <li>Recompile. (one keystroke)</li>
+    <li>That's it! There is no restart step. The app gets updated with the new code while it's running and tests get run automatically to ensure there are no regressions. This of course works great with TDD too.</li>
+  </ol>
+
+</div>
+
+<div class="reason">
+
+  <h1><a name="distr">transparent distribution</a></h1>
+
+<p>Erlang programs can be easily ported from a single computer to a network of computers. With the exception of timing all operations in the distributed system will work in exactly the same way as they worked in a single-node system.</p>
+
+</div>
+
+<div class="reason">
+  <h1><a name="otp">OTP</a></h1>
+  
+  <p>OTP, the Open Telecom Platform, is a collection of standard libraries that distill years of real-world experience of building scalable, distributed, fault-tolerant applications.</p>
+</div>
+
+<div class="reason">
+  <h1><a name="more">more...</a></h1>
+  
+  <ul>
+    <li><strong>Free &amp; open-source</strong>. Erlang is distributed under a permissive open-source license, and is free to use for any open-source, freeware, or commercial projects.</li>
+    <li><strong>Cross-platform</strong>. Erlang runs on Linux, FreeBSD, Windows, Solaris, Mac OS X, and even embedded platforms such as VxWorks.</li>
+    <li><strong>Well-supported</strong>. A dedicated team of engineers is employed by Ericsson to work on Erlang. Commercial support &amp; services are available from <a href="http://www.erlang-solutions.com/">Erlang Solutions</a> and a number of other companies.  There is also a responsive community around the world, centered around the Erlang Mailing List &amp; IRC (<kbd>#erlang</kbd> on Freenode).</li>
+    <li><strong>Plays well with the outside world</strong>. Integration with existing Java, .NET, C, Python, or Ruby code is straightforward. There is an interface to the underlying OS should you need one. Solid libraries to work with XML, JSON, ASN.1, CORBA etc are also available.</li>
+    <li><strong>HiPE</strong>. The <strong>Hi</strong>gh <strong>P</strong>erformance <strong>E</strong>rlang Compiler can compile Erlang to native code on Windows, Linux and Mac OS X and comes in the standard Erlang distribution.</li>
+    <li><strong>Static typing, when you need it</strong>. You can annotate your code with type information &amp; use Dialyzer, a powerful typechecker, to ensure the correctness of your code and gain performance. Dialyzer comes bundled with Erlang, and also supports gradual typing to give you maximum flexibility.</li>
+    <li><strong>Bit syntax</strong>. Another feature unique to Erlang that makes working with binary data a breeze. Writing programs such as binary file readers or network protocol parsers is easier in Erlang than in any other language. Erlang code that uses the binary syntax is compiled into <em>very efficient</em> machine code, often beating hand-written C code in performance.</li>
+  </ul>
+</div>
+
+<div id="footer">
+  <p>made by <a href="http://veldstra.org">Hasan Veldstra</a>. The source for this is <a href="http://github.com/hassy/whyerlang/">up on GitHub</a>.</p>
+</div>
+
+</div> <!-- content -->
+
+</body>
+</html>
