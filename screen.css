@@ -32,6 +32,10 @@ a {
   padding-bottom: 0;
 }
 
+a:hover {
+    background-color: #eee;
+}
+
 a:visited {
   color: #666;
 }
