@@ -1,0 +1,156 @@
+
+/* global reset: */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+p {
+  margin: 1em 0;
+}
+
+table {
+  font-size: inherit;
+  font: 100%;
+}
+
+/* end of global reset */
+
+#page_title {
+  font-size: 200%;
+}
+
+a {
+  color: #000;
+  border-bottom: 1px solid #9f9f9f;
+  text-decoration: none;
+  padding-bottom: 0;
+}
+
+a:hover {
+    background-color: #eee;
+}
+
+a:visited {
+  color: #666;
+}
+
+/* main styles: */
+
+body {
+  font: 10pt "Helvetica Neue", Arial, sans-serif;
+  background: #fff;
+  line-height: 1.5em;
+}
+
+p { line-height: 1.5em }
+
+#bigQuote {
+  line-height: 1.3em;
+  text-align: left;
+  margin-bottom: 35px;
+}
+
+#bigQuote blockquote {
+  font: 1.1em Georgia, Times;
+  font-style: italic;
+  color: #aa8;
+}
+
+#bigQuote #quoteAuthor {
+  color: #818181;
+  text-align: left;
+  font-style: italic;
+}
+
+#bigQuote #quoteAuthor a {
+  color: #818181;
+}
+
+#header {
+  margin: 10px 0 30px 0;
+}
+
+#content {
+  margin: 0 auto 0 auto;
+  width: 500px;
+}
+
+.reason {
+  text-align: left;
+  color: #424242;
+  margin-top: 35px;
+}
+
+.reason h1 {
+  border-bottom: 1px solid #ddd;
+  color: #B0003B;  /* Erlang red */
+  font-family: "Gill Sans", "Cambria", "Georgia", "Times New Roman", Times, serif;
+  font-size: 18pt;
+  font-weight: normal;
+  letter-spacing: -1px;
+  padding-bottom: 3px;
+  margin-bottom: 15px;
+}
+
+.reason h1 a {
+    color: #b0003b;
+    text-decoration: none;
+    border: none;
+}
+
+.todo {
+  color: #c03;
+}
+
+#footer {
+  margin-top: 30px;
+  font-size: 0.8em;
+  color: #818181;
+  border-top: 1px solid #eee;
+}
+
+strong {
+  color: #000;
+  font-weight: bold;
+}
+
+strong a {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+strong a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+abbr {
+  border-bottom: 1px dotted #666;
+}
+
+ul, li {
+  line-height: 1.5em;
+}
+
+
+#summary h1 {
+  font-size: 1.3em;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+#summary p {
+  margin: 5px 0 25px 0;
+  padding: 0;
+}
